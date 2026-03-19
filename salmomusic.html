@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salmo Music - Escola de Música</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#111;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:black;
+    padding:20px;
+    text-align:center;
+    border-bottom:2px solid gold;
+}
+
+header h1{
+    color:gold;
+    margin:0;
+    font-size:36px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    height:90vh;
+}
+
+/* IMAGEM */
+
+.hero-img-container{
+    width:50%;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+}
+
+/* TEXTO */
+
+.hero-texto{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+    background:#111;
+    align-items:flex-start;
+}
+
+.hero-texto h2{
+    font-size:42px;
+    color:gold;
+}
+
+.hero-texto p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+/* BOTÃO */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+/* CURSOS */
+
+.cursos{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cursos h2{
+    color:gold;
+    margin-bottom:40px;
+}
+
+.lista{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    background:#1f1f1f;
+    padding:25px;
+    width:180px;
+    border-radius:10px;
+}
+
+.card h3{
+    color:gold;
+}
+
+/* PROFESSOR (RESUMO NA HOME) */
+
+.professor-home{
+    padding:60px 20px;
+    text-align:center;
+    background:#1a1a1a;
+}
+
+.professor-home h2{
+    color:gold;
+}
+
+/* CONTATO */
+
+.contato{
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    border-top:2px solid gold;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 768px){
+    .hero{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .hero-img-container,
+    .hero-texto{
+        width:100%;
+    }
+
+    .hero-texto{
+        padding:30px;
+        text-align:center;
+        align-items:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Salmo Music</h1>
+
+<nav>
+<a href="#">Início</a>
+<a href="#cursos">Cursos</a>
+<a href="professor/professor.html">Professor</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-img-container">
+    <img src="imagens/fabio.jpeg" class="hero-img">
+</div>
+
+<div class="hero-texto">
+    <h2>A arte da música</h2>
+    <p>Aulas com o Professor Fábio</p>
+    <a class="btn" href="https://wa.me/5548999175085">Falar no WhatsApp</a>
+</div>
+
+</section>
+
+<section class="cursos" id="cursos">
+
+<h2>Instrumentos</h2>
+
+<div class="lista">
+
+<div class="card"><h3>Teclado</h3></div>
+<div class="card"><h3>Violão</h3></div>
+<div class="card"><h3>Guitarra</h3></div>
+<div class="card"><h3>Baixo</h3></div>
+<div class="card"><h3>Bateria</h3></div>
+
+</div>
+
+</section>
+
+<section class="professor-home">
+
+<h2>Professor Fábio</h2>
+
+<p>
+Conheça mais sobre o professor, sua história e sua missão no ensino da música.
+</p>
+
+<a class="btn" href="professor/professor.html">Ver mais</a>
+
+</section>
+
+<section class="contato" id="contato">
+
+<h2>Contato</h2>
+
+<p>Telefone / WhatsApp</p>
+
+<h3>(48) 99917-5085</h3>
+
+<a class="btn" href="https://wa.me/5548999175085">Agendar Aula</a>
+
+</section>
+
+<footer>
+
+<p>Salmo Music © 2026</p>
+
+</footer>
+
+</body>
+</html>
